@@ -1,0 +1,37 @@
+#optionWindows-container{
+    background-color: var(--primary-color);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.optionWindows-expanded{
+    min-width: 50px;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    resize: horizontal;
+}
+
+.optionWindows-collapsed {
+    min-width: 50px;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.manageOptions-active{
+    height: 100%;
+    width: 200px;
+    box-sizing: border-box;
+    border: 1px solid var(--secondary-color);
+}
+
+.manageOptions{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}

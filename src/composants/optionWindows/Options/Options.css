@@ -1,0 +1,34 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    &:hover{
+        cursor: pointer;
+        background-color: var(--accent-color);
+    }
+    
+}
+
+.options-dactive{
+    width: 50px;
+}
+
+img{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+span{
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-size: var(--first-size);
+}
+

@@ -1,0 +1,63 @@
+.NavBar{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    align-content: center;
+    flex: 1;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo img[alt="logo de l'entreprise"] {
+    height: 50px;
+    width: auto;
+}
+
+#gbtool {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+#contact {
+    color: #2e7d32;
+    background-color: #e8f5e9;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 1px;
+}
+
+#nav-right img[alt="Téléphone"] {
+    height: 20px;
+    width: auto;
+}
+
+#nav-right img[alt="Aide"] {
+    height: 40px;
+    width: auto;
+}
+
+#contact a {
+    padding-right: 10px;
+}
