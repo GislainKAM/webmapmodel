@@ -1,0 +1,47 @@
+{
+  "name": "React OpenLayers DevContainer",
+
+  "dockerComposeFile": ["../../docker-compose.yml"],
+  "service": "web",
+  "workspaceFolder": "/app",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // 🌐 React / TypeScript
+        "ms-vscode.vscode-typescript-next",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "dsznajder.es7-react-js-snippets",
+        "xabikos.ReactSnippets",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+
+        // 🗺️ OpenLayers / JSON
+        "mohsen1.prettify-json",
+        "stkb.rewrap",
+
+        // 🧠 Utilitaires
+        "eamodio.gitlens",
+        "christian-kohler.path-intellisense",
+        "wix.vscode-import-cost",
+
+        // 🐳 Dev Container / Docker
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-containers"
+      ],
+      "settings": {
+        // Force VSCode à utiliser le TS du conteneur
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "typescript.enablePromptUseWorkspaceTsdk": true,
+
+        // Active ESLint et Prettier à l'intérieur du conteneur
+        "eslint.workingDirectories": ["./"],
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      }
+    }
+  },
+
+  "remoteUser": "root"
+}
